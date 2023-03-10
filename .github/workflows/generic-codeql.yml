@@ -74,7 +74,3 @@ jobs:
       uses: github/codeql-action/analyze@v2
       with:
         category: ${{ inputs.category }}
-    - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v2
-      with:
-        category: "I-am-become:derp"
