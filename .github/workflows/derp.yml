@@ -9,7 +9,7 @@
 # the `language` matrix defined below to confirm you have the correct set of
 # supported CodeQL languages.
 #
-name: "CodeQL"
+name: "DestroyerQL"
 
 on:
   push:
@@ -20,6 +20,12 @@ on:
   schedule:
     - cron: '35 17 * * 4'
   workflow_dispatch:
+    inputs:
+      something:
+        description: "Something"
+        required: false
+        default: 'something'
+        type: string
 
 jobs:
   analyze:
